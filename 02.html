@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio JavaScript01 </title>
+</head>
+<body>
+
+ <h1>Atividade de cadastro de dados de um professor</h1>
+   <p>nome:<span id=nome></span></p>
+    <p>descrição: <span id=descricao></span></p> 
+    <p>Frequencia: <span id=frequencia></span></p>
+<p>Média minima para aprovaçãp: <span id=minima></span></p>
+
+<script>
+    let nome = prompt("Digite seu nome:");
+    let descricao = prompt("Digite a descrição: ");
+    let frequencia = prompt("Digite sua frequencia:");
+    let minima = prompt("Digite a idade minima para aprovação:");
+ 
+     
+    document.getElementById("nome").innerHTML=nome;
+    document.getElementById("descricao").innerHTML=descricao;
+    document.getElementById("frequencia").innerHTML=frequencia;
+    document.getElementById("minima").innerHTML=minima;
+    
+    </script>
+   
+</body>
+</html>

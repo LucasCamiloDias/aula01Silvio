@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio JavaScript01 </title>
+</head>
+<body>
+
+ <h1>Atividade de cadastro de dados de um professor</h1>
+   <p>nome:<span id=nome></span></p>
+    <p>nota de matemática: <span id=nota1></span></p> 
+    <p>nota de história: <span id=nota2></span></p>
+<p>nota de português: <span id=nota3></span></p>
+
+<script>
+    let nome = prompt("Digite seu nome:");
+    let nota1= Number(prompt("Digite sua nota de matemática:"));
+    let nota2= Number(prompt("Digite sua nota de história:"));
+    let nota3= Number(prompt("Digite sua nota de português:"));
+ 
+     
+    document.getElementById("nome").innerHTML=nome;
+    document.getElementById("nota1").innerHTML=nota1;
+    document.getElementById("nota2").innerHTML=nota2;
+    document.getElementById("nota3").innerHTML=nota3;
+    
+    </script>
+   
+</body>
+</html>

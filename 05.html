@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio JavaScript01 </title>
+</head>
+<body>
+
+ <h1>Atividade de cadastro de dados de um professor</h1>
+   <p>nome:<span id=nome></span></p>
+    <p>Hora escolhida: <span id=hora></span></p> 
+    <p>Minuto: <span id=minuto></span></p>
+<p>Segundos: <span id=segundo></span></p>
+<p>O resultado final é: <span id="resultado"></span></p>
+
+
+<script>
+
+    let nome= prompt("Digite seu nome:");
+ 
+    let hora= Number(prompt("Digite sua hora:"));
+    let minuto= Number(prompt("Digite seu minuto:"));
+    let segundo= Number(prompt("Digite seu segundo:"));
+    let resultado = (hora * 3600) + (minuto * 60) + (segundo)   
+
+     
+    document.getElementById("nome").innerHTML=nome;
+    document.getElementById("hora").innerHTML=hora;
+    document.getElementById("minuto").innerHTML=minuto;
+    document.getElementById("segundo").innerHTML=segundo;
+    document.getElementById("resultado").innerHTML=resultado;
+  
+    
+    </script>
+   
+</body>
+</html>
